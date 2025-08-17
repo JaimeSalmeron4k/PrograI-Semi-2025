@@ -19,10 +19,31 @@ namespace Actv2Csharp
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            double num1, num2, respuesta;
+            double num1, num2, respuesta=0;
             num1 = double.Parse(txtNum1.Text);
             num2 = double.Parse(txtNum2.Text);
             respuesta = num1 + num2;
+            }
+            if (OptResta.Checked)
+            {
+                respuesta = num1 - num2;
+            }
+            if (OptMultiplicacion.Checked)
+            {
+                respuesta = num1 * num2;
+            }
+            if (OptDivision.Checked)
+            {
+                respuesta = num1 / num2;
+            }
+            if (OptExponenciacion.Checked)
+            {
+                respuesta = Math.Pow(num1, num2);
+            }
+            if (OptPorcentaje .Checked)
+            {
+                respuesta = (num1 / num2) * 0.10;
+            }
             lblRespuesta.Text = "Respuesta: " + respuesta;
             
         }
