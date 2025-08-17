@@ -22,7 +22,9 @@ namespace Actv2Csharp
             double num1, num2, respuesta=0;
             num1 = double.Parse(txtNum1.Text);
             num2 = double.Parse(txtNum2.Text);
-            respuesta = num1 + num2;
+            if (OptSuma.Checked)
+            {
+                respuesta = num1 + num2;
             }
             if (OptResta.Checked)
             {
@@ -44,8 +46,31 @@ namespace Actv2Csharp
             {
                 respuesta = (num1 / num2) * 0.10;
             }
-            lblRespuesta.Text = "Respuesta: " + respuesta;
-            
+            lblRespuesta.Text = "Respuesta = " + respuesta;
+
+        }
+
+        private void btnCalcularOpciones_Click(object sender, EventArgs e)
+        {
+            double num1, num2, respuesta = 0;
+            num1 = double.Parse(txtNum1.Text);
+            num2 = double.Parse(txtNum2.Text);
+            switch (cboOpciones.SelectedIndex)
+            {
+                case 0:
+                    respuesta = num1 + num2;
+                    break;
+                case 1:
+                    respuesta = num1 - num2;
+                    break;
+                case 2:
+                    respuesta = num1 * num2;
+                    break;
+                case 3:
+                    respuesta = num1 / num2;
+                    break;
+            }
+            lblRespuesta.Text = "Respuesta =" + respuesta;
+            }
         }
     }
-}

@@ -8,3 +8,4 @@ C:\Users\DELL\Desktop\PrograI-Semi-2025\Actv2Csharp\Actv2Csharp\obj\Debug\Actv2C
 C:\Users\DELL\Desktop\PrograI-Semi-2025\Actv2Csharp\Actv2Csharp\obj\Debug\Actv2Csharp.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Desktop\PrograI-Semi-2025\Actv2Csharp\Actv2Csharp\obj\Debug\Actv2Csharp.exe
 C:\Users\DELL\Desktop\PrograI-Semi-2025\Actv2Csharp\Actv2Csharp\obj\Debug\Actv2Csharp.pdb
+C:\Users\DELL\Desktop\PrograI-Semi-2025\Actv2Csharp\Actv2Csharp\obj\Debug\Actv2Csharp.exe.config
