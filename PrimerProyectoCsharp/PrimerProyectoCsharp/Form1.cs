@@ -289,6 +289,11 @@ namespace PrimerProyectoCsharp
 
             lblResultado.Text = "Resultado: ?";
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

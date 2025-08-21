@@ -55,13 +55,14 @@
             this.cboConversor = new System.Windows.Forms.ComboBox();
             this.txtMoneda = new System.Windows.Forms.TextBox();
             this.lblMoneda = new System.Windows.Forms.Label();
+            this.lblTabla = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTiempo2
             // 
             this.lblTiempo2.AutoSize = true;
             this.lblTiempo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTiempo2.Location = new System.Drawing.Point(524, 331);
+            this.lblTiempo2.Location = new System.Drawing.Point(533, 358);
             this.lblTiempo2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTiempo2.Name = "lblTiempo2";
             this.lblTiempo2.Size = new System.Drawing.Size(118, 25);
@@ -72,7 +73,7 @@
             // 
             this.lblAlmacenamiento2.AutoSize = true;
             this.lblAlmacenamiento2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAlmacenamiento2.Location = new System.Drawing.Point(605, 277);
+            this.lblAlmacenamiento2.Location = new System.Drawing.Point(614, 304);
             this.lblAlmacenamiento2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAlmacenamiento2.Name = "lblAlmacenamiento2";
             this.lblAlmacenamiento2.Size = new System.Drawing.Size(67, 25);
@@ -81,8 +82,8 @@
             // 
             // btnReiniciar
             // 
-            this.btnReiniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReiniciar.Location = new System.Drawing.Point(367, 416);
+            this.btnReiniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReiniciar.Location = new System.Drawing.Point(376, 443);
             this.btnReiniciar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReiniciar.Name = "btnReiniciar";
             this.btnReiniciar.Size = new System.Drawing.Size(262, 80);
@@ -105,7 +106,7 @@
             "Microsegundo",
             "Nanosegundo",
             "Picosegundo"});
-            this.cboConversor6.Location = new System.Drawing.Point(333, 331);
+            this.cboConversor6.Location = new System.Drawing.Point(342, 358);
             this.cboConversor6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboConversor6.Name = "cboConversor6";
             this.cboConversor6.Size = new System.Drawing.Size(180, 28);
@@ -113,7 +114,7 @@
             // 
             // txtTiempo
             // 
-            this.txtTiempo.Location = new System.Drawing.Point(175, 330);
+            this.txtTiempo.Location = new System.Drawing.Point(184, 357);
             this.txtTiempo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTiempo.Name = "txtTiempo";
             this.txtTiempo.Size = new System.Drawing.Size(148, 26);
@@ -123,7 +124,7 @@
             // 
             this.lblTiempo.AutoSize = true;
             this.lblTiempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTiempo.Location = new System.Drawing.Point(83, 331);
+            this.lblTiempo.Location = new System.Drawing.Point(92, 358);
             this.lblTiempo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTiempo.Name = "lblTiempo";
             this.lblTiempo.Size = new System.Drawing.Size(84, 25);
@@ -144,7 +145,7 @@
             "Kilobyte (kB)",
             "Hectobyte (hB)",
             "Decabyte (daB)"});
-            this.cboConversor5.Location = new System.Drawing.Point(415, 276);
+            this.cboConversor5.Location = new System.Drawing.Point(424, 303);
             this.cboConversor5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboConversor5.Name = "cboConversor5";
             this.cboConversor5.Size = new System.Drawing.Size(180, 28);
@@ -152,7 +153,7 @@
             // 
             // txtAlmacenamiento
             // 
-            this.txtAlmacenamiento.Location = new System.Drawing.Point(255, 276);
+            this.txtAlmacenamiento.Location = new System.Drawing.Point(264, 303);
             this.txtAlmacenamiento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAlmacenamiento.Name = "txtAlmacenamiento";
             this.txtAlmacenamiento.Size = new System.Drawing.Size(148, 26);
@@ -162,7 +163,7 @@
             // 
             this.lblAlmacenamiento.AutoSize = true;
             this.lblAlmacenamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAlmacenamiento.Location = new System.Drawing.Point(79, 277);
+            this.lblAlmacenamiento.Location = new System.Drawing.Point(88, 304);
             this.lblAlmacenamiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAlmacenamiento.Name = "lblAlmacenamiento";
             this.lblAlmacenamiento.Size = new System.Drawing.Size(164, 25);
@@ -183,7 +184,7 @@
             "Nanómetro (nm)",
             "Pulgada (in)",
             "Pie (ft)"});
-            this.cboConversor4.Location = new System.Drawing.Point(385, 222);
+            this.cboConversor4.Location = new System.Drawing.Point(394, 249);
             this.cboConversor4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboConversor4.Name = "cboConversor4";
             this.cboConversor4.Size = new System.Drawing.Size(180, 28);
@@ -193,7 +194,7 @@
             // 
             this.lblLongitud2.AutoSize = true;
             this.lblLongitud2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLongitud2.Location = new System.Drawing.Point(347, 230);
+            this.lblLongitud2.Location = new System.Drawing.Point(356, 257);
             this.lblLongitud2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLongitud2.Name = "lblLongitud2";
             this.lblLongitud2.Size = new System.Drawing.Size(23, 25);
@@ -202,7 +203,7 @@
             // 
             // txtLongitud
             // 
-            this.txtLongitud.Location = new System.Drawing.Point(175, 224);
+            this.txtLongitud.Location = new System.Drawing.Point(184, 251);
             this.txtLongitud.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtLongitud.Name = "txtLongitud";
             this.txtLongitud.Size = new System.Drawing.Size(148, 26);
@@ -212,7 +213,7 @@
             // 
             this.lblLongitud.AutoSize = true;
             this.lblLongitud.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLongitud.Location = new System.Drawing.Point(83, 225);
+            this.lblLongitud.Location = new System.Drawing.Point(92, 252);
             this.lblLongitud.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLongitud.Name = "lblLongitud";
             this.lblLongitud.Size = new System.Drawing.Size(93, 25);
@@ -233,7 +234,7 @@
             "Decalitro (dL)",
             "Centilitro (cL)",
             "Mililitro (mL)"});
-            this.cboConversor3.Location = new System.Drawing.Point(385, 171);
+            this.cboConversor3.Location = new System.Drawing.Point(394, 198);
             this.cboConversor3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboConversor3.Name = "cboConversor3";
             this.cboConversor3.Size = new System.Drawing.Size(180, 28);
@@ -243,7 +244,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(347, 174);
+            this.label1.Location = new System.Drawing.Point(356, 201);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(23, 25);
@@ -252,7 +253,7 @@
             // 
             // txtVolumen
             // 
-            this.txtVolumen.Location = new System.Drawing.Point(175, 173);
+            this.txtVolumen.Location = new System.Drawing.Point(184, 200);
             this.txtVolumen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtVolumen.Name = "txtVolumen";
             this.txtVolumen.Size = new System.Drawing.Size(148, 26);
@@ -262,7 +263,7 @@
             // 
             this.lblVolumen.AutoSize = true;
             this.lblVolumen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVolumen.Location = new System.Drawing.Point(83, 174);
+            this.lblVolumen.Location = new System.Drawing.Point(92, 201);
             this.lblVolumen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVolumen.Name = "lblVolumen";
             this.lblVolumen.Size = new System.Drawing.Size(96, 25);
@@ -283,7 +284,7 @@
             "Gramo (g)",
             "Miligramo (mg)",
             "Microgramo (µg)"});
-            this.cboConversor2.Location = new System.Drawing.Point(385, 120);
+            this.cboConversor2.Location = new System.Drawing.Point(394, 147);
             this.cboConversor2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboConversor2.Name = "cboConversor2";
             this.cboConversor2.Size = new System.Drawing.Size(180, 28);
@@ -291,7 +292,7 @@
             // 
             // txtMasa
             // 
-            this.txtMasa.Location = new System.Drawing.Point(175, 124);
+            this.txtMasa.Location = new System.Drawing.Point(184, 151);
             this.txtMasa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMasa.Name = "txtMasa";
             this.txtMasa.Size = new System.Drawing.Size(148, 26);
@@ -301,7 +302,7 @@
             // 
             this.lblMasa2.AutoSize = true;
             this.lblMasa2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMasa2.Location = new System.Drawing.Point(347, 125);
+            this.lblMasa2.Location = new System.Drawing.Point(356, 152);
             this.lblMasa2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMasa2.Name = "lblMasa2";
             this.lblMasa2.Size = new System.Drawing.Size(23, 25);
@@ -312,7 +313,7 @@
             // 
             this.lblMasa.AutoSize = true;
             this.lblMasa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMasa.Location = new System.Drawing.Point(85, 125);
+            this.lblMasa.Location = new System.Drawing.Point(94, 152);
             this.lblMasa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMasa.Name = "lblMasa";
             this.lblMasa.Size = new System.Drawing.Size(67, 25);
@@ -322,18 +323,18 @@
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(597, 124);
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(606, 151);
             this.lblResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(121, 25);
+            this.lblResultado.Size = new System.Drawing.Size(133, 25);
             this.lblResultado.TabIndex = 35;
             this.lblResultado.Text = "Resultado: ?";
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(83, 416);
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Location = new System.Drawing.Point(92, 443);
             this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(261, 80);
@@ -346,7 +347,7 @@
             // 
             this.lblMoneda2.AutoSize = true;
             this.lblMoneda2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoneda2.Location = new System.Drawing.Point(347, 67);
+            this.lblMoneda2.Location = new System.Drawing.Point(356, 94);
             this.lblMoneda2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMoneda2.Name = "lblMoneda2";
             this.lblMoneda2.Size = new System.Drawing.Size(28, 25);
@@ -367,7 +368,7 @@
             "Euro (Europa)",
             "Yen (Japón)",
             "Yuan (China)"});
-            this.cboConversor.Location = new System.Drawing.Point(385, 65);
+            this.cboConversor.Location = new System.Drawing.Point(394, 92);
             this.cboConversor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboConversor.Name = "cboConversor";
             this.cboConversor.Size = new System.Drawing.Size(180, 28);
@@ -375,7 +376,7 @@
             // 
             // txtMoneda
             // 
-            this.txtMoneda.Location = new System.Drawing.Point(175, 64);
+            this.txtMoneda.Location = new System.Drawing.Point(184, 91);
             this.txtMoneda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMoneda.Name = "txtMoneda";
             this.txtMoneda.Size = new System.Drawing.Size(148, 26);
@@ -385,18 +386,30 @@
             // 
             this.lblMoneda.AutoSize = true;
             this.lblMoneda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoneda.Location = new System.Drawing.Point(83, 67);
+            this.lblMoneda.Location = new System.Drawing.Point(92, 94);
             this.lblMoneda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMoneda.Name = "lblMoneda";
             this.lblMoneda.Size = new System.Drawing.Size(95, 25);
             this.lblMoneda.TabIndex = 30;
             this.lblMoneda.Text = "Moneda: ";
             // 
+            // lblTabla
+            // 
+            this.lblTabla.AutoSize = true;
+            this.lblTabla.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTabla.Location = new System.Drawing.Point(264, 24);
+            this.lblTabla.Name = "lblTabla";
+            this.lblTabla.Size = new System.Drawing.Size(391, 40);
+            this.lblTabla.TabIndex = 57;
+            this.lblTabla.Text = "Tabla de Conversores";
+            this.lblTabla.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(952, 568);
+            this.ClientSize = new System.Drawing.Size(1066, 568);
+            this.Controls.Add(this.lblTabla);
             this.Controls.Add(this.lblTiempo2);
             this.Controls.Add(this.lblAlmacenamiento2);
             this.Controls.Add(this.btnReiniciar);
@@ -460,6 +473,7 @@
         private System.Windows.Forms.ComboBox cboConversor;
         private System.Windows.Forms.TextBox txtMoneda;
         private System.Windows.Forms.Label lblMoneda;
+        private System.Windows.Forms.Label lblTabla;
     }
 }
 
