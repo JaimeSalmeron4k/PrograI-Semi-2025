@@ -32,6 +32,7 @@
             this.lblSuma = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.txtSerie = new System.Windows.Forms.TextBox();
+            this.lblVectoresArray = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblSerie
@@ -72,11 +73,22 @@
             this.txtSerie.Size = new System.Drawing.Size(324, 26);
             this.txtSerie.TabIndex = 3;
             // 
+            // lblVectoresArray
+            // 
+            this.lblVectoresArray.AutoSize = true;
+            this.lblVectoresArray.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVectoresArray.Location = new System.Drawing.Point(325, 31);
+            this.lblVectoresArray.Name = "lblVectoresArray";
+            this.lblVectoresArray.Size = new System.Drawing.Size(389, 37);
+            this.lblVectoresArray.TabIndex = 4;
+            this.lblVectoresArray.Text = "Uso de Vectores o Array";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1066, 377);
+            this.Controls.Add(this.lblVectoresArray);
             this.Controls.Add(this.txtSerie);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.lblSuma);
@@ -94,6 +106,7 @@
         private System.Windows.Forms.Label lblSuma;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.TextBox txtSerie;
+        private System.Windows.Forms.Label lblVectoresArray;
     }
 }
 
