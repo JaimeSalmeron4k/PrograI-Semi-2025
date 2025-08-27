@@ -28,73 +28,139 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblSerie = new System.Windows.Forms.Label();
-            this.lblSuma = new System.Windows.Forms.Label();
-            this.btnCalcular = new System.Windows.Forms.Button();
-            this.txtSerie = new System.Windows.Forms.TextBox();
-            this.lblVectoresArray = new System.Windows.Forms.Label();
+            this.btnConvertir = new System.Windows.Forms.Button();
+            this.lblCantidadConversor = new System.Windows.Forms.Label();
+            this.txtCantidadConversor = new System.Windows.Forms.TextBox();
+            this.lblRespuestaConversor = new System.Windows.Forms.Label();
+            this.cboTipoConversor = new System.Windows.Forms.ComboBox();
+            this.lblTipoConversor = new System.Windows.Forms.Label();
+            this.lblDeConversor = new System.Windows.Forms.Label();
+            this.cboDeConversor = new System.Windows.Forms.ComboBox();
+            this.lblAConversor = new System.Windows.Forms.Label();
+            this.cboAConversor = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // lblSerie
+            // btnConvertir
             // 
-            this.lblSerie.AutoSize = true;
-            this.lblSerie.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSerie.Location = new System.Drawing.Point(122, 109);
-            this.lblSerie.Name = "lblSerie";
-            this.lblSerie.Size = new System.Drawing.Size(112, 32);
-            this.lblSerie.TabIndex = 0;
-            this.lblSerie.Text = "SERIE:";
+            this.btnConvertir.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConvertir.Location = new System.Drawing.Point(328, 85);
+            this.btnConvertir.Name = "btnConvertir";
+            this.btnConvertir.Size = new System.Drawing.Size(173, 80);
+            this.btnConvertir.TabIndex = 0;
+            this.btnConvertir.Text = "CONVERTIR";
+            this.btnConvertir.UseVisualStyleBackColor = true;
+            this.btnConvertir.Click += new System.EventHandler(this.btnConvertir_Click);
             // 
-            // lblSuma
+            // lblCantidadConversor
             // 
-            this.lblSuma.AutoSize = true;
-            this.lblSuma.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSuma.Location = new System.Drawing.Point(122, 172);
-            this.lblSuma.Name = "lblSuma";
-            this.lblSuma.Size = new System.Drawing.Size(133, 32);
-            this.lblSuma.TabIndex = 1;
-            this.lblSuma.Text = "SUMA: ?";
+            this.lblCantidadConversor.AutoSize = true;
+            this.lblCantidadConversor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidadConversor.Location = new System.Drawing.Point(29, 206);
+            this.lblCantidadConversor.Name = "lblCantidadConversor";
+            this.lblCantidadConversor.Size = new System.Drawing.Size(119, 24);
+            this.lblCantidadConversor.TabIndex = 1;
+            this.lblCantidadConversor.Text = "CANTIDAD:";
             // 
-            // btnCalcular
+            // txtCantidadConversor
             // 
-            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(694, 109);
-            this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(265, 90);
-            this.btnCalcular.TabIndex = 2;
-            this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = true;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            this.txtCantidadConversor.Location = new System.Drawing.Point(154, 211);
+            this.txtCantidadConversor.Name = "txtCantidadConversor";
+            this.txtCantidadConversor.Size = new System.Drawing.Size(106, 20);
+            this.txtCantidadConversor.TabIndex = 2;
             // 
-            // txtSerie
+            // lblRespuestaConversor
             // 
-            this.txtSerie.Location = new System.Drawing.Point(254, 109);
-            this.txtSerie.Name = "txtSerie";
-            this.txtSerie.Size = new System.Drawing.Size(324, 26);
-            this.txtSerie.TabIndex = 3;
+            this.lblRespuestaConversor.AutoSize = true;
+            this.lblRespuestaConversor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRespuestaConversor.Location = new System.Drawing.Point(29, 273);
+            this.lblRespuestaConversor.Name = "lblRespuestaConversor";
+            this.lblRespuestaConversor.Size = new System.Drawing.Size(91, 24);
+            this.lblRespuestaConversor.TabIndex = 3;
+            this.lblRespuestaConversor.Text = "SUMA: ?";
             // 
-            // lblVectoresArray
+            // cboTipoConversor
             // 
-            this.lblVectoresArray.AutoSize = true;
-            this.lblVectoresArray.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVectoresArray.Location = new System.Drawing.Point(325, 31);
-            this.lblVectoresArray.Name = "lblVectoresArray";
-            this.lblVectoresArray.Size = new System.Drawing.Size(389, 37);
-            this.lblVectoresArray.TabIndex = 4;
-            this.lblVectoresArray.Text = "Uso de Vectores o Array";
+            this.cboTipoConversor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoConversor.FormattingEnabled = true;
+            this.cboTipoConversor.Items.AddRange(new object[] {
+            "Monedas",
+            "Longitud",
+            "Masa",
+            "Volumen",
+            "Almacenamiento",
+            "Tiempo"});
+            this.cboTipoConversor.Location = new System.Drawing.Point(98, 37);
+            this.cboTipoConversor.Name = "cboTipoConversor";
+            this.cboTipoConversor.Size = new System.Drawing.Size(162, 21);
+            this.cboTipoConversor.TabIndex = 4;
+            this.cboTipoConversor.SelectedIndexChanged += new System.EventHandler(this.cboTipoConversor_SelectedIndexChanged);
+            // 
+            // lblTipoConversor
+            // 
+            this.lblTipoConversor.AutoSize = true;
+            this.lblTipoConversor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoConversor.Location = new System.Drawing.Point(29, 32);
+            this.lblTipoConversor.Name = "lblTipoConversor";
+            this.lblTipoConversor.Size = new System.Drawing.Size(63, 24);
+            this.lblTipoConversor.TabIndex = 5;
+            this.lblTipoConversor.Text = "TIPO:";
+            // 
+            // lblDeConversor
+            // 
+            this.lblDeConversor.AutoSize = true;
+            this.lblDeConversor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeConversor.Location = new System.Drawing.Point(29, 80);
+            this.lblDeConversor.Name = "lblDeConversor";
+            this.lblDeConversor.Size = new System.Drawing.Size(44, 24);
+            this.lblDeConversor.TabIndex = 7;
+            this.lblDeConversor.Text = "DE:";
+            // 
+            // cboDeConversor
+            // 
+            this.cboDeConversor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDeConversor.FormattingEnabled = true;
+            this.cboDeConversor.Location = new System.Drawing.Point(79, 85);
+            this.cboDeConversor.Name = "cboDeConversor";
+            this.cboDeConversor.Size = new System.Drawing.Size(181, 21);
+            this.cboDeConversor.TabIndex = 6;
+            // 
+            // lblAConversor
+            // 
+            this.lblAConversor.AutoSize = true;
+            this.lblAConversor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAConversor.Location = new System.Drawing.Point(29, 139);
+            this.lblAConversor.Name = "lblAConversor";
+            this.lblAConversor.Size = new System.Drawing.Size(30, 24);
+            this.lblAConversor.TabIndex = 9;
+            this.lblAConversor.Text = "A:";
+            // 
+            // cboAConversor
+            // 
+            this.cboAConversor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboAConversor.FormattingEnabled = true;
+            this.cboAConversor.Location = new System.Drawing.Point(79, 144);
+            this.cboAConversor.Name = "cboAConversor";
+            this.cboAConversor.Size = new System.Drawing.Size(181, 21);
+            this.cboAConversor.TabIndex = 8;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1066, 377);
-            this.Controls.Add(this.lblVectoresArray);
-            this.Controls.Add(this.txtSerie);
-            this.Controls.Add(this.btnCalcular);
-            this.Controls.Add(this.lblSuma);
-            this.Controls.Add(this.lblSerie);
+            this.ClientSize = new System.Drawing.Size(539, 318);
+            this.Controls.Add(this.lblAConversor);
+            this.Controls.Add(this.cboAConversor);
+            this.Controls.Add(this.lblDeConversor);
+            this.Controls.Add(this.cboDeConversor);
+            this.Controls.Add(this.lblTipoConversor);
+            this.Controls.Add(this.cboTipoConversor);
+            this.Controls.Add(this.lblRespuestaConversor);
+            this.Controls.Add(this.txtCantidadConversor);
+            this.Controls.Add(this.lblCantidadConversor);
+            this.Controls.Add(this.btnConvertir);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "CONVERSORES";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,11 +168,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblSerie;
-        private System.Windows.Forms.Label lblSuma;
-        private System.Windows.Forms.Button btnCalcular;
-        private System.Windows.Forms.TextBox txtSerie;
-        private System.Windows.Forms.Label lblVectoresArray;
+        private System.Windows.Forms.Button btnConvertir;
+        private System.Windows.Forms.Label lblCantidadConversor;
+        private System.Windows.Forms.TextBox txtCantidadConversor;
+        private System.Windows.Forms.Label lblRespuestaConversor;
+        private System.Windows.Forms.ComboBox cboTipoConversor;
+        private System.Windows.Forms.Label lblTipoConversor;
+        private System.Windows.Forms.Label lblDeConversor;
+        private System.Windows.Forms.ComboBox cboDeConversor;
+        private System.Windows.Forms.Label lblAConversor;
+        private System.Windows.Forms.ComboBox cboAConversor;
     }
 }
-
