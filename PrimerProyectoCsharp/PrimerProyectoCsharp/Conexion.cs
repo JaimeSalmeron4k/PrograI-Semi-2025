@@ -22,6 +22,7 @@ namespace PrimerProyectoCsharp
             objConexion.ConnectionString = cadenaConexion;
             objConexion.Open(); //Abrir la conexion a la BD
         }
+       
         public DataSet obtenerDatos()
         {
             objDs.Clear(); //Limpiar el DataSet
@@ -32,6 +33,9 @@ namespace PrimerProyectoCsharp
             objComando.CommandText = "SELECT * FROM alumnos";
             objAdaptador.Fill(objDs, "alumnos");//Tomando los datos de la BD y llenando el DataSet
 
+            objComando.CommandText = "SELECT * FROM docentes";
+            objAdaptador.Fill(objDs, "docentes");//Tomando los datos de la BD y llenando el DataSet
+
             return objDs;
         }
         public string administrarDatosAlumnos(String[] datos, String accion)
@@ -39,15 +43,32 @@ namespace PrimerProyectoCsharp
             String sql = "";
             if (accion == "nuevo")
             {
-                sql = "INSERT INTO alumnos(codigo,nombre,direccion,telefono) VALUES (@codigo, @nombre, @direccion, @telefono)";
+                sql = "INSERT INTO alumnos(codigo,nombre,direccion,telefono) VALUES ('"+ datos[1] +"', '"+ datos[2] +"', '"+ datos[3] +"', '"+ datos[4] +"')";
             }
             else if (accion == "modificar")
             {
-                sql = "UPDATE alumnos SET codigo=@codigo, nombre=@nombre, direccion=@direccion, telefono=@telefono WHERE idAlumno=@idAlumno";
+                sql = "UPDATE alumnos SET codigo='" + datos[1] + "', nombre='" + datos[2] + "', direccion='" + datos[3] + "', telefono='" + datos[4] + "' WHERE idAlumno='" + datos[0] + "'";
             }
             else if (accion == "eliminar")
             {
-                sql = "DELETE FROM alumnos WHERE idAlumno=@idAlumno";
+                sql = "DELETE FROM alumnos WHERE idAlumno='" + datos[0] + "'";
+            }
+            return ejecutarSQL(sql, datos);
+        }
+        public string administrarDatosDocentes(String[] datos, String accion)
+        {
+            String sql = "";
+            if (accion == "nuevo")
+            {
+                sql = "INSERT INTO docentes(codigo,nombre,dui,especialidad,correo,telefono,direccion) VALUES ('"+ datos[1] +"', '"+ datos[2] +"', '"+ datos[3] +"', '"+ datos[4] + "','"+ datos[5] +"', '"+ datos[6] +"', '"+ datos[7] +"')";
+            }
+            else if (accion == "modificar")
+            {
+                sql = "UPDATE docentes SET codigo='" + datos[1] + "', nombre='" + datos[2] + "', dui ='" + datos[3] + "', especialidad='" + datos [4] + "', correo='" + datos [5] + "', telefono ='" + datos [6] + "', direccion='" + datos [7] + "'  WHERE idDocente='" + datos[0] + "'";
+            }
+            else if (accion == "eliminar")
+            {
+                sql = "DELETE FROM docentes WHERE idDocente='" + datos[0] + "'";
             }
             return ejecutarSQL(sql, datos);
         }
@@ -72,5 +93,10 @@ namespace PrimerProyectoCsharp
                 return ex.Message;
             }
         }
+
+
+
     }
 }
+    
+                

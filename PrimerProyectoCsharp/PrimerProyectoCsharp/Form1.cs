@@ -16,7 +16,7 @@ namespace PrimerProyectoCsharp
         {
             InitializeComponent();
         }
-        Conexion objCOnexion = new Conexion();
+        Conexion objConexion = new Conexion();
         DataSet objDs = new DataSet();
         DataTable objDt = new DataTable();
 
@@ -26,7 +26,7 @@ namespace PrimerProyectoCsharp
         private void actualizarDs()
         {
             objDs.Clear(); //Limpiar el DataSet
-            objDs = objCOnexion.obtenerDatos();
+            objDs = objConexion.obtenerDatos();
             objDt = objDs.Tables["alumnos"];
             objDt.PrimaryKey = new DataColumn[] { objDt.Columns["idAlumno"] };
 
@@ -49,6 +49,7 @@ namespace PrimerProyectoCsharp
         private void Form1_Load(object sender, EventArgs e)
         {
             actualizarDs();
+            cboBuscarAlumnos.SelectedIndex = 0;
         }
         private void btnSiguienteAlumno_Click(object sender, EventArgs e)
         {
@@ -114,7 +115,7 @@ namespace PrimerProyectoCsharp
                     idAlumno.Text, txtCodigoAlumno.Text, txtNombreAlumno.Text, txtDireccionAlumno.Text,
                     txtTelefonoAlumno.Text
                 };
-                String respuesta = objCOnexion.administrarDatosAlumnos(alumnos, accion);
+                String respuesta = objConexion.administrarDatosAlumnos(alumnos, accion);
                 if (respuesta != "1")
                 {
                     MessageBox.Show(respuesta, "Error al guardar alumnos.", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -151,7 +152,7 @@ namespace PrimerProyectoCsharp
             if (MessageBox.Show("Esta seguro de eliminar a " + txtNombreAlumno.Text,
                 "Eliminando alumnos", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                String respuesta = objCOnexion.administrarDatosAlumnos(
+                String respuesta = objConexion.administrarDatosAlumnos(
                     new String[] { idAlumno.Text, "", "", "", "" }, "eliminar"
                 );
                 if (respuesta != "1")
@@ -171,19 +172,62 @@ namespace PrimerProyectoCsharp
         }
         private void filtrarDatos(String valor)
         {
-            DataView objDv = objDt.DefaultView;
-            objDv.RowFilter = "codigo like '%" + valor + "%' OR nombre like '%" + valor + "%'";
-            grdAlumnos.DataSource = objDv;
-            seleccionarAlumno();
+            try
+            {
+                DataView objDv = objDt.DefaultView;
+                switch (cboBuscarAlumnos.SelectedIndex)
+                {
+                    case 0: //codigo
+                        objDv.RowFilter = "codigo like '%" + valor + "%'";
+                        break;
+
+                    case 1: //nombre
+                        objDv.RowFilter = "nombre like '%" + valor + "%'";
+                        break;
+                   case 2: //direccion
+                        objDv.RowFilter = "direccion like '%" + valor + "%'";
+                        break;
+                    
+                }
+                grdAlumnos.DataSource = objDv;
+                seleccionarAlumno();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
         private void seleccionarAlumno()
         {
-            posicion = objDt.Rows.IndexOf(objDt.Rows.Find(grdAlumnos.CurrentRow.Cells["id"].Value));
-            mostrarDatos();
+            try
+            {
+                if (grdAlumnos.CurrentRow == null)
+                {
+                    return;
+                }
+                string id = grdAlumnos.CurrentRow.Cells["id"].Value.ToString();
+                posicion = objDt.Rows.IndexOf(objDt.Rows.Find(id));
+                mostrarDatos();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            ;
         }
         private void grdAlumnos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             seleccionarAlumno();
+        }
+
+        private void idAlumno_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblnRegistrosAlumno_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
