@@ -30,10 +30,29 @@ namespace PrimerProyectoCsharp
             objDocentes.MdiParent = this;
             objDocentes.Show();
         }
-
+       
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void materiasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMaterias objMaterias = new FrmMaterias();
+            objMaterias.MdiParent = this;
+            objMaterias.Show();
+        }
+
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void periodosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPeriodos objPeriodos = new FrmPeriodos();
+            objPeriodos.MdiParent = this;
+            objPeriodos.Show();
         }
     }
 }

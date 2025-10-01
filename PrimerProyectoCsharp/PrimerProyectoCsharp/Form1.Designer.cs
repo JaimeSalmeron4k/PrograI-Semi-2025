@@ -50,6 +50,7 @@
             this.btnModificarAlumno = new System.Windows.Forms.Button();
             this.btnAgregarAlumno = new System.Windows.Forms.Button();
             this.grbBusquedaAlumno = new System.Windows.Forms.GroupBox();
+            this.cboBuscarAlumnos = new System.Windows.Forms.ComboBox();
             this.grdAlumnos = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,7 +58,6 @@
             this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtBuscarAlumnos = new System.Windows.Forms.TextBox();
-            this.cboBuscarAlumnos = new System.Windows.Forms.ComboBox();
             this.grbDatosAlumno.SuspendLayout();
             this.grbNavegacionAlumno.SuspendLayout();
             this.grbEdicionAlumno.SuspendLayout();
@@ -297,10 +297,23 @@
             this.grbBusquedaAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbBusquedaAlumno.Location = new System.Drawing.Point(397, 22);
             this.grbBusquedaAlumno.Name = "grbBusquedaAlumno";
-            this.grbBusquedaAlumno.Size = new System.Drawing.Size(476, 275);
+            this.grbBusquedaAlumno.Size = new System.Drawing.Size(494, 275);
             this.grbBusquedaAlumno.TabIndex = 3;
             this.grbBusquedaAlumno.TabStop = false;
             this.grbBusquedaAlumno.Text = "Busqueda Alumnos";
+            // 
+            // cboBuscarAlumnos
+            // 
+            this.cboBuscarAlumnos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBuscarAlumnos.FormattingEnabled = true;
+            this.cboBuscarAlumnos.Items.AddRange(new object[] {
+            "Codigo",
+            "Nombre",
+            "Direccion"});
+            this.cboBuscarAlumnos.Location = new System.Drawing.Point(24, 28);
+            this.cboBuscarAlumnos.Name = "cboBuscarAlumnos";
+            this.cboBuscarAlumnos.Size = new System.Drawing.Size(101, 24);
+            this.cboBuscarAlumnos.TabIndex = 12;
             // 
             // grdAlumnos
             // 
@@ -313,7 +326,7 @@
             this.nombre,
             this.direccion,
             this.telefono});
-            this.grdAlumnos.Location = new System.Drawing.Point(6, 54);
+            this.grdAlumnos.Location = new System.Drawing.Point(24, 54);
             this.grdAlumnos.Name = "grdAlumnos";
             this.grdAlumnos.ReadOnly = true;
             this.grdAlumnos.Size = new System.Drawing.Size(464, 215);
@@ -360,24 +373,11 @@
             // 
             // txtBuscarAlumnos
             // 
-            this.txtBuscarAlumnos.Location = new System.Drawing.Point(108, 28);
+            this.txtBuscarAlumnos.Location = new System.Drawing.Point(126, 28);
             this.txtBuscarAlumnos.Name = "txtBuscarAlumnos";
             this.txtBuscarAlumnos.Size = new System.Drawing.Size(362, 22);
             this.txtBuscarAlumnos.TabIndex = 10;
             this.txtBuscarAlumnos.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBuscarAlumnos_KeyUp);
-            // 
-            // cboBuscarAlumnos
-            // 
-            this.cboBuscarAlumnos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboBuscarAlumnos.FormattingEnabled = true;
-            this.cboBuscarAlumnos.Items.AddRange(new object[] {
-            "Codigo",
-            "Nombre",
-            "Direccion"});
-            this.cboBuscarAlumnos.Location = new System.Drawing.Point(6, 28);
-            this.cboBuscarAlumnos.Name = "cboBuscarAlumnos";
-            this.cboBuscarAlumnos.Size = new System.Drawing.Size(101, 24);
-            this.cboBuscarAlumnos.TabIndex = 12;
             // 
             // Form1
             // 

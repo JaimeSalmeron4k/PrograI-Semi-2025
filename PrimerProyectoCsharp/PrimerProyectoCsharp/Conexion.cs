@@ -36,6 +36,9 @@ namespace PrimerProyectoCsharp
             objComando.CommandText = "SELECT * FROM docentes";
             objAdaptador.Fill(objDs, "docentes");//Tomando los datos de la BD y llenando el DataSet
 
+            objComando.CommandText = "SELECT * FROM materias";
+            objAdaptador.Fill(objDs, "materias");//Tomando los datos de la BD y llenando el DataSet
+
             return objDs;
         }
         public string administrarDatosAlumnos(String[] datos, String accion)
@@ -60,15 +63,33 @@ namespace PrimerProyectoCsharp
             String sql = "";
             if (accion == "nuevo")
             {
-                sql = "INSERT INTO docentes(codigo,nombre,dui,especialidad,correo,telefono,direccion) VALUES ('"+ datos[1] +"', '"+ datos[2] +"', '"+ datos[3] +"', '"+ datos[4] + "','"+ datos[5] +"', '"+ datos[6] +"', '"+ datos[7] +"')";
+                sql = "INSERT INTO docentes(codigo,nombre,dui,especialidad,correo,telefono,direccion) VALUES ('" + datos[1] + "', '" + datos[2] + "', '" + datos[3] + "', '" + datos[4] + "','" + datos[5] + "', '" + datos[6] + "', '" + datos[7] + "')";
             }
             else if (accion == "modificar")
             {
-                sql = "UPDATE docentes SET codigo='" + datos[1] + "', nombre='" + datos[2] + "', dui ='" + datos[3] + "', especialidad='" + datos [4] + "', correo='" + datos [5] + "', telefono ='" + datos [6] + "', direccion='" + datos [7] + "'  WHERE idDocente='" + datos[0] + "'";
+                sql = "UPDATE docentes SET codigo='" + datos[1] + "', nombre='" + datos[2] + "', dui ='" + datos[3] + "', especialidad='" + datos[4] + "', correo='" + datos[5] + "', telefono ='" + datos[6] + "', direccion='" + datos[7] + "'  WHERE idDocente='" + datos[0] + "'";
             }
             else if (accion == "eliminar")
             {
                 sql = "DELETE FROM docentes WHERE idDocente='" + datos[0] + "'";
+            }
+            return ejecutarSQL(sql, datos);
+        }
+
+            public string administrarDatosMaterias(String[] datos, String accion)
+        {
+            String sql = "";
+            if (accion == "nuevo")
+            {
+                sql = "INSERT INTO materias(codigo,nombre,uv) VALUES ('" + datos[1] + "', '" + datos[2] + "', '" + datos[3] + "')";
+            }
+            else if (accion == "modificar")
+            {
+                sql = "UPDATE materias SET codigo='" + datos[1] + "', nombre='" + datos[2] + "', uv='" + datos[3] + "' WHERE idMateria='" + datos[0] + "'";
+            }
+            else if (accion == "eliminar")
+            {
+                sql = "DELETE FROM materias WHERE idMateria='" + datos[0] + "'";
             }
             return ejecutarSQL(sql, datos);
         }

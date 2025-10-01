@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.grbBusquedaDocente = new System.Windows.Forms.GroupBox();
+            this.cboBuscarDocentes = new System.Windows.Forms.ComboBox();
             this.grdDocentes = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,7 +67,6 @@
             this.lblCodigoDocente = new System.Windows.Forms.Label();
             this.txtCodigoDocente = new System.Windows.Forms.TextBox();
             this.lblIdDocente = new System.Windows.Forms.Label();
-            this.cboBuscarDocentes = new System.Windows.Forms.ComboBox();
             this.grbBusquedaDocente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdDocentes)).BeginInit();
             this.grbEdicionDocente.SuspendLayout();
@@ -86,6 +86,19 @@
             this.grbBusquedaDocente.TabIndex = 7;
             this.grbBusquedaDocente.TabStop = false;
             this.grbBusquedaDocente.Text = "Busqueda Docentes";
+            // 
+            // cboBuscarDocentes
+            // 
+            this.cboBuscarDocentes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBuscarDocentes.FormattingEnabled = true;
+            this.cboBuscarDocentes.Items.AddRange(new object[] {
+            "Codigo",
+            "Nombre",
+            "Especialidad"});
+            this.cboBuscarDocentes.Location = new System.Drawing.Point(9, 28);
+            this.cboBuscarDocentes.Name = "cboBuscarDocentes";
+            this.cboBuscarDocentes.Size = new System.Drawing.Size(108, 24);
+            this.cboBuscarDocentes.TabIndex = 12;
             // 
             // grdDocentes
             // 
@@ -453,19 +466,6 @@
             this.lblIdDocente.TabIndex = 0;
             this.lblIdDocente.Text = "ID:";
             // 
-            // cboBuscarDocentes
-            // 
-            this.cboBuscarDocentes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboBuscarDocentes.FormattingEnabled = true;
-            this.cboBuscarDocentes.Items.AddRange(new object[] {
-            "Codigo",
-            "Nombre",
-            "Especialidad"});
-            this.cboBuscarDocentes.Location = new System.Drawing.Point(9, 28);
-            this.cboBuscarDocentes.Name = "cboBuscarDocentes";
-            this.cboBuscarDocentes.Size = new System.Drawing.Size(108, 24);
-            this.cboBuscarDocentes.TabIndex = 12;
-            // 
             // FrmDocentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -476,7 +476,7 @@
             this.Controls.Add(this.grbNavegacionDocente);
             this.Controls.Add(this.grbDatosDocente);
             this.Name = "FrmDocentes";
-            this.Text = "FrmDocentes";
+            this.Text = "ADMINISTRACIÓN DE DOCENTES";
             this.Load += new System.EventHandler(this.FrmDocentes_Load);
             this.grbBusquedaDocente.ResumeLayout(false);
             this.grbBusquedaDocente.PerformLayout();
