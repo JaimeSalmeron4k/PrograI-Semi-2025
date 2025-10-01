@@ -384,9 +384,9 @@
             this.idDocente.AutoSize = true;
             this.idDocente.Location = new System.Drawing.Point(134, 37);
             this.idDocente.Name = "idDocente";
-            this.idDocente.Size = new System.Drawing.Size(50, 16);
+            this.idDocente.Size = new System.Drawing.Size(54, 16);
             this.idDocente.TabIndex = 9;
-            this.idDocente.Text = "label1";
+            this.idDocente.Text = "Label1";
             // 
             // lblTelefonoDocente
             // 
