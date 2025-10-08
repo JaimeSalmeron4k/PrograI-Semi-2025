@@ -26,3 +26,4 @@ C:\Users\MINEDUCYT\Desktop\PrograI-Semi-2025\PrimerProyectoCsharp\PrimerProyecto
 C:\Users\MINEDUCYT\Desktop\PrograI-Semi-2025\PrimerProyectoCsharp\PrimerProyectoCsharp\obj\Debug\PrimerProyectoCsharp.FrmMaterias.resources
 C:\Users\MINEDUCYT\Desktop\PrograI-Semi-2025\PrimerProyectoCsharp\PrimerProyectoCsharp\obj\Debug\PrimerProyectoCsharp.Form1.resources
 C:\Users\MINEDUCYT\Desktop\PrograI-Semi-2025\PrimerProyectoCsharp\PrimerProyectoCsharp\obj\Debug\PrimerProyectoCsharp.FrmPeriodos.resources
+C:\Users\MINEDUCYT\Desktop\PrograI-Semi-2025\PrimerProyectoCsharp\PrimerProyectoCsharp\obj\Debug\PrimerProyectoCsharp.FrmNotas.resources
