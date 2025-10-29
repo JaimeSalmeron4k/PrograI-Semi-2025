@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace PrimerProyectoCsharp
 {
-    internal static class Program
+     static class Program
     {
         /// <summary>
         /// Punto de entrada principal para la aplicación.
@@ -16,7 +16,7 @@ namespace PrimerProyectoCsharp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPrincipal());
+            Application.Run(new Login());
         }
     }
 }
