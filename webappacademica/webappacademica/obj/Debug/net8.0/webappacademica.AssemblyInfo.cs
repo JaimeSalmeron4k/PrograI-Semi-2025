@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("webappacademica")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0351505429a493fcac20fd8368952a01a3611177")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee0ad99733ae2080d55f60a78250f57a5727e79a")]
 [assembly: System.Reflection.AssemblyProductAttribute("webappacademica")]
 [assembly: System.Reflection.AssemblyTitleAttribute("webappacademica")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
