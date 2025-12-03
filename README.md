@@ -1,16 +1,25 @@
-# Tabla-de-Conversores-PrograI-Semi-2025
-Programación Computacional I 
+# Progral-semi-2025
+Programacion Computacional I
 
-Desarrollo de la actividad de la semana de la realización de una Tabla de Conversores (Monedas, Masa, Volumen, Longitud, Almacenamiento, Tiempo) con 10 Items cada conversor.
+# Proyecto Final
 
-Integrantes del grupo:
+## Tecnologias a Utilizar
+* Visual Studio 2022
+* C#
+* SQL Server Express
+* ASP.NET
+* Entity FrameWork
+* HTML + CSS + JS
+* BootStrap
+* API REST FULL
+* Git - Github
 
-Rodrigo Benjamín Baires Flores COD. USSS005825
-
-Jaime Schafik Salmerón Chicas COD. USSS014225
-
-Josué Alexander Rivera Martínez COD. USSS001725
-
-David Roberto Sánchez Rodríguez COD. USSS001825
-
-Dayana Michell Abrego Quiroz COD. USSS168222
+## Requisitos minimos del Proyecto Final
+* Equipos de trabajo
+* BD
+* 5 Formularios Basicos (Complejidad basica o una tabla)
+* 3 Formularios Intermedios (Complejidad media o con 2 o 3 tablas)
+* 3 Formularios Avanzados (Complejidad alta o 3 o mas tablas anidadas)
+* 10 Reportes (Salida de informacion o presentacion de informacion al usuario)
+* Menu y accesos rapidos, barras de herramientas, cuadros de dialogo
+* Creatividad e Innovacion
