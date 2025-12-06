@@ -1,4 +1,4 @@
-﻿﻿<form id="frmAlumno">
+﻿﻿﻿<form id="frmAlumno">
     <div class="card border-secondary mb-3" style="min-width: 700px;">
         <div class="card-header">
             <div class="d-flex">
@@ -38,7 +38,7 @@
                 <div class="col-12 text-center">
                     <input type="submit" class="btn btn-outline-primary" value="Guardar" />
                     <input type="reset" class="btn btn-outline-warning" value="Nuevo" />
-                    <input type="button" class="btn btn-outline-success" value="Buscar" onclick="abrirVentana('busqueda_alumno')" />
+                    <input type="button" class="btn btn-outline-success" value="Buscar" onclick="formActivo = 'alumno'; abrirVentana('busqueda_alumno')" />
                 </div>
             </div>
         </div>
@@ -50,6 +50,10 @@
     frmAlumno.addEventListener('submit', e => {
         e.preventDefault();
         guardarAlumno();
+    });
+    frmAlumno.addEventListener('reset', e => {
+        e.preventDefault();
+        limpiarDatosAlumno();
     });
     async function guardarAlumno() {
         let datos = {
@@ -74,7 +78,7 @@
         }), alumno = await respuesta.json();
         if ((alumno?.idAlumno || 0) > 0) {
             limpiarDatosAlumno();
-            listarAlumnos();
+            listarAlumnos(txtBuscarAlumno.value || '');
         }
     }
     function limpiarDatosAlumno() {
